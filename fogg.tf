@@ -14,3 +14,7 @@ module "env" {
 output "vpc_id" {
   value = "${module.env.vpc_id}"
 }
+
+output "vpc_net16" {
+  value = "${module.env.vpc_net16}"
+}

@@ -19,3 +19,10 @@ output "vpc_net16" {
   value = "${module.env.vpc_net16}"
 }
 
+output "asg_id" {
+  value = "${module.env.asg_id}"
+}
+
+output "asg_name" {
+  value = "${module.env.asg_name}"
+}

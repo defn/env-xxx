@@ -23,6 +23,6 @@ output "asg_id" {
   value = "${module.env.asg_id}"
 }
 
-output "asg_name" {
-  value = "${module.env.asg_name}"
+output "asg_arn" {
+  value = "${module.env.asg_arn}"
 }

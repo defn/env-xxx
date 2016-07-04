@@ -31,3 +31,7 @@ output "asg_arn" {
 output "vpc_fqdn" {
   value = "${module.env.vpc_zone}.${data.terraform_remote_state.global.vpc_domain}"
 }
+
+output "zone_id" {
+  value = "${module.env.zone_id}"
+}

@@ -9,6 +9,7 @@ module "env" {
 
   vpc_name = "${var.vpc_name}"
   vpc_cidr = "${var.vpc_cidr}"
+  vpc_zone = "${var.vpc_name}"
 }
 
 output "vpc_id" {

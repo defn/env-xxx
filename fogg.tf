@@ -9,7 +9,7 @@ module "env" {
 
   vpc_name = "${var.vpc_name}"
   vpc_cidr = "${var.vpc_cidr}"
-  vpc_zone = "${var.vpc_name}"
+  vpc_zone = "${var.vpc_zone}"
 }
 
 output "vpc_id" {
@@ -26,4 +26,8 @@ output "asg_id" {
 
 output "asg_arn" {
   value = "${module.env.asg_arn}"
+}
+
+output "vpc_fqdn" {
+  value = "${module.env.vpc_zone}.${data.terraform_remote_state.global.vpc_domain}"
 }

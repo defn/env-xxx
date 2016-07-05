@@ -12,6 +12,10 @@ module "env" {
   vpc_zone = "${var.vpc_zone}"
 }
 
+output "igw" {
+  value = "${module.env.igw}"
+}
+
 output "vpc_id" {
   value = "${module.env.vpc_id}"
 }
